@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1ED84;
+    position: relative;
+
+    &-container {
+    flex-direction: column;
+    }
+
+    &-logo {
+    max-width: 100%;
+    }
+  
+    &-bar {
+    color: black !important;
+
+        &:hover {
+        color: white !important;
+        }
+    }
+}
+
+#basic-nav-dropdown {
+    color: black;
+}
+
+
