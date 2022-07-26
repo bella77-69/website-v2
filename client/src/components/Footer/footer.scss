@@ -1,0 +1,114 @@
+@import "../../styles/mixins";
+
+.footer {
+    background-color: $background;
+    padding-bottom: 1rem;
+    
+    &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+        @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        }
+
+    &--social {
+        display: flex;
+        margin-top: .5rem;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        filter: drop-shadow(0 0 .5px $blackmat) drop-shadow(0 0 8px $blackmat);
+        transition-delay: 0.3s;
+    
+            @include tablet {
+            margin-top: 1rem;
+            }
+    
+            @include desktop {
+            margin-top: 1.5rem;
+            }
+        }
+    }
+
+    &-icon{
+        display: inline-block;
+        width: .9375rem;
+        height: .9375rem;
+        cursor: pointer;
+        background-color: $background;
+        border-radius: .312rem;
+        font-size: .687rem;
+        color: $blackmat;
+        text-align: center;
+        margin-right: .937rem;
+        margin-left: 1.25rem;
+        margin-top: .0625rem;
+        text-decoration: none;
+        
+            &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            color: $fontlight;
+            }
+                
+            @include tablet {
+            width: 1.5625rem;
+            height: 1.5625rem;
+            font-size: 1.25rem;
+            margin-right: .625rem;
+            margin-top: 1rem;
+            }
+              
+            @include desktop {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1.875rem;
+            margin-right: 1.562rem;
+            margin-left: 2.187rem;
+            line-height: 3.25rem;
+            }
+        }
+    
+    &-txt {
+    font-weight: 900;   
+    letter-spacing: .0813rem;
+    font-size: .625rem;
+    color: $black;
+    letter-spacing: .0625rem;
+    text-align: center;
+    line-height: 1.25rem;
+
+        @include tablet {
+        font-size: .875rem;
+        }
+
+        @include desktop {
+        padding-top: 4rem;    
+        font-size: 1rem;
+        }
+    }
+    
+    &-title {
+    width: 50%;
+
+        @include tablet {
+        width: 35%;
+        }
+
+        @include desktop {
+        width: 24%;
+        padding-left: 0;
+        }
+    }
+
+    &-copyright {
+
+        @include desktop {
+        padding-right: 3.125rem;
+        }
+    }
+
+}

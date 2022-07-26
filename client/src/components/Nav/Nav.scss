@@ -1,7 +1,8 @@
+@import "../../styles/mixins";
 .nav {
     display: flex;
     flex-direction: column;
-    background-color: #F1ED84;
+    background-color: $background;
     position: relative;
 
     &-container {
@@ -13,16 +14,16 @@
     }
   
     &-bar {
-    color: black !important;
+    color: $blackmat !important;
 
         &:hover {
-        color: white !important;
+        color: $fontlight !important;
         }
     }
 }
 
 #basic-nav-dropdown {
-    color: black;
+    color: $blackmat;
 }
 
 

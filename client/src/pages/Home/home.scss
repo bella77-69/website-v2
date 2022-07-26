@@ -1,0 +1,119 @@
+@import "../../styles/mixins";
+
+/* Variables */
+$bg-image: "../../assets/images/background.jpg";
+$bg-overlay: rgba(32, 32, 32, 0.7);
+$primary-color: #FFFFFF;
+$secondary-color: #FFF0A5;
+
+/* Mixins */
+@mixin bg-images(
+    $image-path: "../../assets/images/background.jpg",
+    $overlay-color: rgba(255,255,255,0.2),
+    $position: center center) {
+    position: relative;
+
+    &:before {
+        background:
+            linear-gradient(
+              $overlay-color,
+              $overlay-color
+            ),
+            url($image-path);
+        background-position: $position;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        content: ' ';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+header {
+  @include bg-images(
+    $image-path: $bg-image,
+    $overlay-color: $bg-overlay
+  );
+  padding: 28px;
+  text-align: center;
+  height: 25vh;
+
+    @include tablet {
+    height: 66vh;
+    }
+
+    @include desktop {
+    height: 90vh;
+    }
+  
+  .container {
+   margin: 1rem auto;
+
+     @include tablet {
+     padding: 6rem;
+     }
+
+     @include desktop {
+     max-width: 1450px;
+     padding: 15rem;
+     }
+  }
+}
+  
+h1 {
+  border-bottom: 2px solid $primary-color;
+  border-top: 2px solid $primary-color;
+  color: $primary-color;
+  font-family: $fontfamily;
+  font-size: .75rem;
+  margin: 0;
+
+    @include tablet {
+    font-size: 1.5rem;
+    }
+
+    @include desktop {
+    font-size: 2rem;
+    }
+}
+  
+h3 {
+  color: $secondary-color;
+  font-family: $fontfamily;
+  font-size: .75rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  padding-top: .5rem;
+
+    @include tablet {
+    font-size: .875rem;
+    padding-top: 1rem;
+    }
+
+    @include desktop {
+    font-size: 1.5625rem;
+    }
+}
+
+h5 {
+  color: $secondary-color;
+  font-family: $fontfamily;
+  font-size: .625rem;
+  font-weight: 100;
+  font-style: italic;
+  padding-top: .312rem;
+  margin: 0;
+
+    @include tablet {
+    font-size: .8125rem;
+    }
+
+    @include desktop {
+    font-size: 1.25rem;
+    }
+}

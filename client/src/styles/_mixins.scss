@@ -1,0 +1,43 @@
+$black: #151518;
+$blackmat: #0b0b0b;
+$grey: #57555a;
+$font: #99979a;
+$blkgrey: #383739;
+$shade: #44444c;
+$highlight: #c2c2c2;
+$border: #2c3433;
+$btndark: #444c4c;
+$btnlight: #7c8484;
+$light: #d1d1d1;
+
+$white: #fff;
+$lightgrey: #c2c2c2;
+
+
+$background: #F1ED84;
+$blackmat: #0b0b0b;
+$fontlight: #f5f5f5;
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Lato&family=Oswald:wght@700&display=swap');
+$fontfamily: 'IBM Plex Sans', sans-serif;
+
+//media breakpoint for mobile
+@mixin mobile {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+}
+
+//media breakpoints for tablet */
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+}
+
+//media breakpoints for desktop 
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+    }
+}
