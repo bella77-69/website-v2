@@ -10,13 +10,13 @@ router.get("/", commentController.getAllComments);
 router.get("/:id", commentController.getCommentByID);
 
 // get name for Update
-router.get("/comments/:commentid", commentController.getByCommentId);
+router.get("/:commentid", commentController.getByCommentId);
 
 // create new comment
 router.post("/", commentController.createNewComment);
 
 // update comment
-router.put("/comments/:id", commentController.updateComment);
+router.put("/:id", commentController.updateComment);
 
 // delete comment
 router.delete("/:id", commentController.deleteComment);

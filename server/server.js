@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 8000;
 
-app.use('/comments', commentRoute);
+app.use('/api', commentRoute);
 app.get('/', (req, res) => {
     res.status(200).json('Hello');
 })

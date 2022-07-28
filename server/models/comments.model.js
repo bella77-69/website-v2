@@ -8,7 +8,7 @@ const AllComments = function (comment) {
 
 //get all Comments
 AllComments.getAllComments = (result) => {
-  dbConn.query("SELECT * FROM review_comments", (err, res) => {
+  dbConn.query("SELECT * FROM comments", (err, res) => {
     if (err) {
       console.log("Error while fetching All Comments", err);
       result(null, err);
@@ -23,7 +23,7 @@ AllComments.getAllComments = (result) => {
 //get comments by comment id
 AllComments.getByCommentId = (email, result) => {
   dbConn.query(
-    "SELECT * FROM review_comments WHERE email= ?",
+    "SELECT * FROM comments WHERE email= ?",
     email,
     (err, res) => {
       if (err) {
@@ -39,7 +39,7 @@ AllComments.getByCommentId = (email, result) => {
   // create new comment
   AllComments.createNewComment = (CommentsReqData, result) => {
     dbConn.query(
-      "INSERT INTO review_comments SET ?",
+      "INSERT INTO comments SET ?",
       CommentsReqData,
       (err, res) => {
         if (err) {
@@ -55,7 +55,7 @@ AllComments.getByCommentId = (email, result) => {
   
   //get comment by ID for update
   AllComments.getCommentByID = (id, result) => {
-    dbConn.query("SELECT * FROM review_comments WHERE id=?", id, (err, res) => {
+    dbConn.query("SELECT * FROM comments WHERE id=?", id, (err, res) => {
       if (err) {
         console.log("Error while fetching comment by id", err);
         result(null, err);
@@ -68,8 +68,8 @@ AllComments.getByCommentId = (email, result) => {
   //update comment
   AllComments.updateComment = (id, CommentsReqData, result) => {
     dbConn.query(
-      "UPDATE review_comments SET comment=?, name=?, email=?  WHERE id = ?",
-      [CommentsReqData.comments, CommentsReqData.name, CommentsReqData.email, id],
+      "UPDATE comments SET comment=?, name=?, email=?  WHERE id = ?",
+      [CommentsReqData.comment, CommentsReqData.name, CommentsReqData.email, id],
       (err, res) => {
         if (err) {
           console.log("Error while updating Comments");
@@ -84,7 +84,7 @@ AllComments.getByCommentId = (email, result) => {
   
   //delete comment
   AllComments.deleteComment = (id, result) => {
-    dbConn.query("DELETE from review_comments WHERE id=?", [id], (err, res) => {
+    dbConn.query("DELETE from comments WHERE id=?", [id], (err, res) => {
       if (err) {
         console.log("Error while deleting the comment");
         result(null, err);
