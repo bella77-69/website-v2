@@ -4,7 +4,9 @@ import Nav from "./components/Nav/Nav";
 import Loading from "./components/Loading/Loading";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Footer from "./components/Footer/Footer"
+import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -20,6 +22,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
+            <Route path='/contact' exact component={Contact} />
           </Switch>
           <Footer />
         </div>
