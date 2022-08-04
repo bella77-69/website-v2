@@ -1,22 +1,13 @@
-//background-color: #353353;
-// .loading {
-//     height: 700px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: #F1ED84;
-//     background-image: url('../../assets/images/loading.svg');
-//     background-repeat: no-repeat;
-//     background-position: center center;
-// }
+body {
+    background-color: #FFFDE7;
+}
 
 #loading {
     position: absolute;
     left: calc(50% - 100px);
     top: calc(50% - 25px);
-    z-index: 9999
+    z-index: 9999;
 }
-
 
 .uil-ripple {
     position: absolute;
