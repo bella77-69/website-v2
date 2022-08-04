@@ -7,8 +7,9 @@ function About() {
   return (
     <div className="aboutus-section">
       <div className="container">
-        <div className="row h-100 py-5 align-items-center justify-content-center">
-          <div className="col-lg-8">
+        <div className="row h-100 align-items-center justify-content-center">
+          <div className="col-lg-12">
+          {/* <div className="col-lg-8"> */}
             <div className="aboutus">
                 <Title title='About Me' />
               <p className="aboutus-text">
@@ -28,7 +29,7 @@ function About() {
               </p>
              
             </div>
-          </div>
+      
           <div className="col-md-3 col-sm-6 col-xs-12">
             <div className="aboutus-banner">
               <img
@@ -40,6 +41,7 @@ function About() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,0 +1,335 @@
+@import "../../styles/mixins";
+
+.project {
+    padding: 20px 0;
+    // height: fit-content;
+    background-color: $pageBackground;
+
+    &-shadow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $white;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 6%), 0 2px 5px 0 rgb(0, 0, 0, 20%);
+    width: 100%;
+    }
+
+    &-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    position: static;
+    // font-family: $fontfamily;
+
+        @include tablet {
+        width: 100%;
+        margin-top: 1.875rem;
+        justify-content: center;
+        }
+    }
+
+    &-divder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+        @include tablet {
+        flex-direction: row;
+        }
+
+        @include desktop {
+        justify-content: flex-start;
+        }
+    }
+
+    &-subNav {
+    color: $blackmat;
+    top: 3.75rem;
+    font-size: .9375rem;
+    height: fit-content;
+    text-align: center;
+    font-weight: bolder;
+    // font-family: $fontfamily;
+
+        @include tablet {
+        text-decoration: none;
+        position: -webkit-sticky;
+        position: sticky;
+        text-align: end;
+        font-size: 1rem;
+        position: -webkit-sticky;
+        position: sticky;
+        width: 10.625rem;
+        height: fit-content;
+        text-align: end;
+        }
+
+        @include desktop {
+        font-size: 1.5625rem;
+        width: 19.687rem;
+        margin-left: 1rem;
+        }
+    }
+
+    &-subtitle {
+    display: flex;
+    flex-direction: column;
+
+        @include tablet {
+        text-align: left;
+        font-size: 1rem;
+        margin: 20px 0px 5px 0px;
+        padding-bottom: .625rem;
+        }
+
+        @include desktop {
+        font-size: 1.25rem;
+        margin: 20px 20px 5px 20px
+        }
+    }
+
+    &-content {
+
+        @include mobile {
+        border-top: 2px solid $lightgrey;
+        margin: 1rem;
+        }
+
+        @include tablet  {
+        padding-left: .9375rem;
+        margin-left: .312rem;
+        border-left: 2px solid $lightgrey;
+        margin-bottom: 1.875rem;
+        max-width: 34.375rem;
+        }
+
+        @include desktop {
+        padding-left: 1.25rem;
+        max-width: 46.875rem;
+        }
+    }
+
+    &-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+        @include tablet {
+        justify-content: flex-start;
+        }
+    }
+
+    &-name {
+    text-align: left;
+    font-size: .9375rem;
+    margin-bottom: .937rem;
+    color: $blackmat;
+
+        @include tablet {
+        font-size: 1.5rem;
+        }
+
+        @include desktop {
+        font-size: 1.625rem;
+        }
+    }
+
+    &-desc {
+    text-align: left;
+    font-size: .875rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+    color: $font;
+    padding-right: .5rem;
+    // font-family: $fontfamily;
+    font-weight: 200;
+
+        @include tablet {
+        font-size: .937rem;
+        line-height: 1.125rem;
+        padding-right: 1rem;
+        }
+
+        @include desktop {
+        text-align: left;
+        font-size: 1.187rem;
+        font-weight: 200;
+        line-height: 25px;
+        width: 100%;
+        padding-right: 0;
+        }
+    }
+
+    &-option {    
+    text-align: left;
+    font-size: .875rem;
+    margin: 20px 0px 10px 0px;
+    color: $black;
+        
+        @include tablet {
+        font-size: 1rem;
+        }
+
+        @include desktop {
+        font-size: 1.25rem;
+        }
+}
+
+    &-demo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .625rem;
+    align-items: center;
+    transition:transform 0.25s ease;
+
+    // &:hover {
+    //     transform:scale(1.5);
+    //     margin-left: 1.75rem;
+    // }
+        @include mobile {
+        width: 5.625rem;
+        }
+
+        @include tablet {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: .625rem;
+        width: 9.375rem;
+        }
+
+        @include desktop {
+        width: 15.625rem;
+        }
+    }
+
+    &-desktopDemo {
+    object-fit: contain;
+    width: 8.875rem;
+    margin-right: 1.562rem;
+    box-shadow: .8px .9px 3px $border;
+
+        @include tablet {
+        width: 19.375rem;
+        }
+        
+        @include desktop {
+        width: 31.25rem;
+        }
+    }
+
+    &-mobileDemo {
+    object-fit: contain;
+    width: 3.312rem;
+    box-shadow: .8px .9px 3px $border;
+
+        @include mobile {
+        width: 3.375rem;
+        }
+
+        @include tablet {
+        width: 7.312rem;  
+        }
+
+        @include desktop {
+        width: 11.875rem;
+        }
+    }
+
+    &-subpoints {
+    display: flex;
+    flex-direction: row;
+
+        @include mobile {
+        flex-direction: column;
+        width: 100%;
+        padding-top: .75rem;
+        }
+
+        @include tablet {
+        flex-direction: row;
+        }
+    }
+
+    &-demofullimg {
+    width: 18.75rem;
+        
+        @include tablet {
+        width: 25rem;
+        }
+
+        @include desktop {
+        width: 31.25rem;
+        }
+    }
+
+    &-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+        @include mobile {
+        width: 100%;
+        }
+
+        @include tablet {
+        width: 50%;
+        }
+
+        @include desktop {
+        width: 40%;
+        }
+    }
+
+    &-notes {
+    margin-top: 0;
+    padding-left: 1.562rem;
+    padding-right: 1.25rem;
+    text-align: left;
+    font-size: .75rem;
+    color: $grey;
+
+        @include tablet {
+        padding-left: 1.25rem;
+        font-size: .875rem;
+        }
+
+        @include desktop {
+        font-size: 1.062rem;
+        margin-left: 1.062rem;
+        padding-right: 0;
+        }
+    }
+
+    &-website {
+    background-image: url(../../assets/logo/git.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: .937rem;
+    margin-left: .625rem;
+    width: 1.25rem;
+    height: 1.875rem;
+    cursor: pointer;
+    align-items: center;
+    
+        @include tablet {
+        width: 1.562rem;
+        }
+            
+        @include desktop {
+        width: 1.875rem;
+        }
+
+        &:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+    }
+}

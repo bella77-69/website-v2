@@ -1,12 +1,25 @@
+@import '../../styles/mixins';
+
 .title {
-    font-size: 30px;
+    font-size: 1rem;
     letter-spacing: 0;
     line-height: 32px;
     margin: 0 0 39px;
-    padding: 0 0 11px;
+    padding-top: 1.5rem;
+   // padding: 0 0 11px;
     position: relative;
     text-transform: uppercase;
     color: #000;
+
+    @include tablet {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        }
+
+        @include desktop {
+        font-size: 1.75rem;
+        padding-top: 5rem;
+        }
 }
 .title::after {
     background: #F1ED84 none repeat scroll 0 0;

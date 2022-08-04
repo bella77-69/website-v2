@@ -9,6 +9,7 @@ $secondary-color: #FFF0A5;
 /* Mixins */
 @mixin bg-images(
     $image-path: "../../assets/images/background.jpg",
+
     $overlay-color: rgba(255,255,255,0.2),
     $position: center center) {
     position: relative;
@@ -40,18 +41,18 @@ header {
   );
   padding: 28px;
   text-align: center;
-  height: 25vh;
+  height: 30vh;
 
     @include tablet {
     height: 66vh;
     }
 
     @include desktop {
-    height: 90vh;
+    height: 100vh;
     }
   
   .container {
-   margin: 1rem auto;
+   margin: 0;
 
      @include tablet {
      padding: 6rem;
@@ -59,7 +60,7 @@ header {
 
      @include desktop {
      max-width: 1450px;
-     padding: 15rem;
+     padding: 12.5rem;
      }
   }
 }
@@ -69,7 +70,7 @@ h1 {
   border-top: 2px solid $primary-color;
   color: $primary-color;
   font-family: $fontfamily;
-  font-size: .75rem;
+  font-size: .6875rem;
   margin: 0;
 
     @include tablet {
@@ -84,7 +85,7 @@ h1 {
 h3 {
   color: $secondary-color;
   font-family: $fontfamily;
-  font-size: .75rem;
+  font-size: .6875rem;
   font-style: italic;
   font-weight: 400;
   margin: 0;
@@ -103,11 +104,12 @@ h3 {
 h5 {
   color: $secondary-color;
   font-family: $fontfamily;
-  font-size: .625rem;
+  font-size: .5625rem;
   font-weight: 100;
   font-style: italic;
-  padding-top: .312rem;
+  padding-top: .3125rem;
   margin: 0;
+  line-height: 1.25;
 
     @include tablet {
     font-size: .8125rem;

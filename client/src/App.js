@@ -5,13 +5,14 @@ import Loading from "./components/Loading/Loading";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Project from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2500);
+    setTimeout(() => setLoading(false), 1500);
   }, []);
 
   return (
@@ -22,7 +23,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
-            <Route path='/contact' exact component={Contact} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/projects" exact component={Project} />
           </Switch>
           <Footer />
         </div>
