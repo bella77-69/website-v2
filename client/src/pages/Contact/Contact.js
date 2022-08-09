@@ -46,10 +46,10 @@ export default function Contact(props) {
   return (
     <div className="contact-section">
       <div className="container">
+        <Title title="Contact Me" />
         <div className="row h-100 align-items-center justify-content-center">
           <div className="col-lg-8">
             <div className="contact">
-              <Title title="Contact Me" />
               <div className="container">
                 <form id="contact-form" onSubmit={handleSubmit}>
                   <div className="controls">
@@ -109,7 +109,7 @@ export default function Contact(props) {
                       <div className="col-md-12">
                         <input
                           type="submit"
-                          className="btn btn-dark btn-send  pt-2 btn-block"
+                          className="btn  btn-send  pt-2 btn-block"
                           value="Send Message"
                         />
                       </div>

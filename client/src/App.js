@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Project from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import "./App.scss";
 
 function App() {
   const [loading, setLoading] = useState(true);

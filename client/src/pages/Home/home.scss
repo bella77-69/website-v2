@@ -4,12 +4,13 @@
 $bg-image: "../../assets/images/background.jpg";
 $bg-overlay: rgba(32, 32, 32, 0.7);
 $primary-color: #FFFFFF;
-$secondary-color: #FFF0A5;
-
+// $secondary-color: #FFF0A5;
+// $secondary-color: #cbdbf3;
+// $secondary-color: #a594a1;
+$secondary-color: #fcf9fb;
 /* Mixins */
 @mixin bg-images(
     $image-path: "../../assets/images/background.jpg",
-
     $overlay-color: rgba(255,255,255,0.2),
     $position: center center) {
     position: relative;
@@ -39,12 +40,13 @@ header {
     $image-path: $bg-image,
     $overlay-color: $bg-overlay
   );
-  padding: 28px;
+  padding: 2.625rem;
   text-align: center;
-  height: 30vh;
+  // height: 30vh;
 
     @include tablet {
     height: 66vh;
+    padding: 3rem;
     }
 
     @include desktop {
@@ -87,13 +89,13 @@ h3 {
   font-family: $fontfamily;
   font-size: .6875rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
-  padding-top: .5rem;
+  padding-top: 1rem;
 
     @include tablet {
-    font-size: .875rem;
-    padding-top: 1rem;
+    font-size: 1rem;
+    padding-top: 2rem;
     }
 
     @include desktop {
@@ -105,17 +107,17 @@ h5 {
   color: $secondary-color;
   font-family: $fontfamily;
   font-size: .5625rem;
-  font-weight: 100;
+  font-weight: 200;
   font-style: italic;
   padding-top: .3125rem;
   margin: 0;
   line-height: 1.25;
 
     @include tablet {
-    font-size: .8125rem;
+    font-size: 1rem;
     }
 
     @include desktop {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
     }
 }

@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Nav.scss";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo1.png";
 
 export default function Header() {
   return (

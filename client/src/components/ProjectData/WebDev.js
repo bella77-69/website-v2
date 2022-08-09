@@ -13,7 +13,7 @@ export const PrjData = [
     desktopGif: lash,
     mobileGif: lash2,
     features: ["Appointment Scheduling","Customer base management","Saving user's contact form","Give feedback of services","Price Grid",],
-    techs: ["React","Mongo","Express","Node","material-ui","react-router","react-redux","axios","bootstrap","styled-components","jsonwebtoken","bcryptjs","mongoose",],
+    techs: ["React","Mongo","Express","Node","Material-ui","React-Router","React-Redux","Axios","Bootstrap","Styled-Components","JsonWebToken","BCryptjs","Mongoose",],
   },
   {
     id: 2,

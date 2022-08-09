@@ -5,10 +5,11 @@
     background-color: $pageBackground;
 }
 
-// .aboutus-text {
-//     color: #4d4c4c;
-//     font-size: 13px;
-//     line-height: 22px;
-//     margin: 0 0 35px;
-// }
+.btn {
+    background-color: $background;
+            
+        &:hover {
+        color: $fontlight;
+        }
+}
 

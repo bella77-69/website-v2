@@ -20,9 +20,11 @@
         font-size: 1.75rem;
         padding-top: 5rem;
         }
+
 }
 .title::after {
-    background: #F1ED84 none repeat scroll 0 0;
+    // background: #F1ED84 none repeat scroll 0 0;
+    background: #84b0f1 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
