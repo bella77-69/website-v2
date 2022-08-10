@@ -8,8 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
     
         @include tablet {
+        padding-top: 0;
         flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
@@ -75,31 +77,28 @@
     &-txt {
     font-weight: 900;   
     letter-spacing: .0813rem;
-    font-size: .625rem;
     color: $black;
     letter-spacing: .0625rem;
     text-align: center;
     line-height: 1.25rem;
 
-        @include tablet {
-        font-size: .875rem;
-        }
-
         @include desktop {
         padding-top: 4rem;    
-        font-size: 1rem;
         }
     }
     
     &-title {
     width: 50%;
+    font-size: .75rem;
 
         @include tablet {
+        font-size: .8125rem;
         width: 35%;
         }
 
         @include desktop {
-        width: 24%;
+        font-size: 1.125rem;
+        width: 25%;
         padding-left: 0;
         }
     }

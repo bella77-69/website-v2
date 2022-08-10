@@ -48,7 +48,7 @@ export default function Contact(props) {
       <div className="container">
         <Title title="Contact Me" />
         <div className="row h-100 align-items-center justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <div className="contact">
               <div className="container">
                 <form id="contact-form" onSubmit={handleSubmit}>

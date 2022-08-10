@@ -40,9 +40,9 @@ header {
     $image-path: $bg-image,
     $overlay-color: $bg-overlay
   );
-  padding: 2.625rem;
+  padding: 1.25rem;
   text-align: center;
-  // height: 30vh;
+  height: 30vh;
 
     @include tablet {
     height: 66vh;
@@ -72,7 +72,7 @@ h1 {
   border-top: 2px solid $primary-color;
   color: $primary-color;
   font-family: $fontfamily;
-  font-size: .6875rem;
+  font-size: 1rem;
   margin: 0;
 
     @include tablet {
@@ -87,7 +87,7 @@ h1 {
 h3 {
   color: $secondary-color;
   font-family: $fontfamily;
-  font-size: .6875rem;
+  font-size: .875rem;
   font-style: italic;
   font-weight: 300;
   margin: 0;
@@ -106,7 +106,7 @@ h3 {
 h5 {
   color: $secondary-color;
   font-family: $fontfamily;
-  font-size: .5625rem;
+  font-size: .75rem;
   font-weight: 200;
   font-style: italic;
   padding-top: .3125rem;
