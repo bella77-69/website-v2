@@ -2,7 +2,6 @@
 
 .project {
     padding: 20px 0;
-    // height: fit-content;
     background-color: $pageBackground;
 
     &-shadow {
@@ -24,7 +23,6 @@
     align-self: center;
     align-items: center;
     position: static;
-    // font-family: $fontfamily;
 
         @include tablet {
         width: 100%;
@@ -55,7 +53,6 @@
     height: fit-content;
     text-align: center;
     font-weight: bolder;
-    // font-family: $fontfamily;
 
         @include tablet {
         text-decoration: none;
@@ -148,7 +145,6 @@
     padding-bottom: 1rem;
     color: $font;
     padding-right: .5rem;
-    // font-family: $fontfamily;
     font-weight: 200;
 
         @include tablet {
@@ -189,10 +185,6 @@
     align-items: center;
     transition:transform 0.25s ease;
 
-    // &:hover {
-    //     transform:scale(1.5);
-    //     margin-left: 1.75rem;
-    // }
         @include mobile {
         width: 5.625rem;
         }

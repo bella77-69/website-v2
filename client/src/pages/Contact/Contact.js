@@ -3,7 +3,7 @@ import Title from "../../components/Title/Title";
 import axios from "axios";
 import "./contact.scss";
 
-export default function Contact(props) {
+export default function Contact() {
   const [comment, setComment] = useState({
     name: "",
     email: "",

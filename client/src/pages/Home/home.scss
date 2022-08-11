@@ -4,10 +4,8 @@
 $bg-image: "../../assets/images/background.jpg";
 $bg-overlay: rgba(32, 32, 32, 0.7);
 $primary-color: #FFFFFF;
-// $secondary-color: #FFF0A5;
-// $secondary-color: #cbdbf3;
-// $secondary-color: #a594a1;
 $secondary-color: #fcf9fb;
+
 /* Mixins */
 @mixin bg-images(
     $image-path: "../../assets/images/background.jpg",
@@ -50,11 +48,13 @@ header {
     }
 
     @include desktop {
-    height: 100vh;
+    height: 90vh;
     }
   
   .container {
    margin: 0;
+   width: 100%;
+   vertical-align: middle;
 
      @include tablet {
      padding: 6rem;
@@ -62,7 +62,7 @@ header {
 
      @include desktop {
      max-width: 1450px;
-     padding: 12.5rem;
+     padding: 25vh;
      }
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.scss";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+
 export default function footer() {
   return (
     <footer className="footer">
