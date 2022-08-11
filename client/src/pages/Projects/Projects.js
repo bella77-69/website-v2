@@ -17,8 +17,8 @@ const Projects = () => {
                 <div className="project-divder" id="webprj">
                   <div className="project-subNav">Web Development Projects</div>
                   <div className="project-subtitle">
-                    {PrjData.map((website) => (
-                      <div className="project-content">
+                    {PrjData.map((website, index) => (
+                      <div className="project-content" key={index}>
                         <div className="project-info">
                           <div className="project-name">{website.name}</div>
                           <a className="project-website" href={website.github}>
@@ -46,16 +46,16 @@ const Projects = () => {
                           <div className="project-column">
                             <div className="project-subtitle">FEATURES</div>
                             <ul className="project-notes">
-                              {website.features.map((feature) => (
-                                <li>{feature}</li>
+                              {website.features.map((feature, index) => (
+                                <li key={index}>{feature}</li>
                               ))}
                             </ul>
                           </div>
                           <div className="project-column">
                             <div className="project-subtitle">TECHNOLOGIES</div>
                             <ul className="project-notes">
-                              {website.techs.map((tech) => (
-                                <li>{tech}</li>
+                              {website.techs.map((tech, index) => (
+                                <li  key={index}>{tech}</li>
                               ))}
                             </ul>
                           </div>
@@ -67,8 +67,8 @@ const Projects = () => {
                 <div className="project-divder">
                   <div className="project-subNav"> Brainstation Projects</div>
                   <div className="project-subtitle">
-                    {BrainStnData.map((app) => (
-                      <div className="project-content">
+                    {BrainStnData.map((app, index) => (
+                      <div className="project-content" key={index}>
                         <div className="project-info">
                           <div className="project-name">{app.name}</div>
                           <a className="project-website" href={app.github}>
@@ -91,8 +91,8 @@ const Projects = () => {
                             <div className="project-column">
                               <div className="project-subtitle">FEATURES</div>
                               <ul className="project-notes">
-                                {app.features.map((feature) => (
-                                  <li className="project-list">{feature}</li>
+                                {app.features.map((feature, index) => (
+                                  <li className="project-list" key={index}>{feature}</li>
                                 ))}
                               </ul>
                             </div>
@@ -101,8 +101,8 @@ const Projects = () => {
                                 TECHNOLOGIES
                               </div>
                               <ul className="project-notes">
-                                {app.techs.map((module) => (
-                                  <li className="project-list">{module}</li>
+                                {app.techs.map((module, index) => (
+                                  <li className="project-list" key={index}>{module}</li>
                                 ))}
                               </ul>
                             </div>
@@ -115,8 +115,8 @@ const Projects = () => {
                 <div className="project-divder">
                   <div className="project-subNav">Other Projects</div>
                   <div className="project-subtitle">
-                    {OthprjData.map((prj) => (
-                      <div className="project-content">
+                    {OthprjData.map((prj, index) => (
+                      <div className="project-content" key={index}>
                         <div className="project-info">
                           <div className="project-name">{prj.name}</div>
                           <a className="project-website" href={prj.github}>
@@ -131,8 +131,8 @@ const Projects = () => {
                               gap: "5px",
                             }}
                           >
-                            {prj.tags.map((tag) => (
-                              <div
+                            {prj.tags.map((tag, index) => (
+                              <div key={index}
                                 style={{
                                   textAlign: "left",
                                   backgroundColor: tag.color,
@@ -171,8 +171,8 @@ const Projects = () => {
                               <div className="project-column">
                                 <div className="project-subtitle">FEATURES</div>
                                 <ul className="project-notes">
-                                  {prj.features.map((feature) => (
-                                    <li>{feature}</li>
+                                  {prj.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -181,8 +181,8 @@ const Projects = () => {
                                   TECHNOLOGIES
                                 </div>
                                 <ul className="project-notes">
-                                  {prj.techs.map((tech) => (
-                                    <li>{tech}</li>
+                                  {prj.techs.map((tech, index) => (
+                                    <li key={index}>{tech}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -208,8 +208,8 @@ const Projects = () => {
                               <div className="column">
                                 <div className="project-subtitle">FEATURES</div>
                                 <ul className="notes">
-                                  {prj.features.map((feature) => (
-                                    <li>{feature}</li>
+                                  {prj.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -218,8 +218,8 @@ const Projects = () => {
                                   TECHNOLOGIES
                                 </div>
                                 <ul className="notes">
-                                  {prj.techs.map((tech) => (
-                                    <li>{tech}</li>
+                                  {prj.techs.map((tech, index) => (
+                                    <li key={index}>{tech}</li>
                                   ))}
                                 </ul>
                               </div>
