@@ -1,16 +1,18 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
 require("dotenv").config();
 
 const app = express();
 const commentRoute = require("./routes/commentsRoute");
+const path = require("path");
 
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.use("/api", commentRoute);
 
 const PORT = process.env.PORT || 8000;
 
@@ -20,11 +22,6 @@ if (process.env.NODE_ENV === "production") {
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
-});
-
-app.use("/api", commentRoute);
-app.get("/", (req, res) => {
-  res.status(200).json("Hello");
 });
 
 app.listen(PORT, (req, res) => {
