@@ -37,6 +37,6 @@ const PORT = process.env.PORT || 8000;
 //   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 // });
 
-app.listen(PORT, (req, res) => {
+app.listen(process.env.PORT || 8000, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
 });
