@@ -16,7 +16,6 @@ app.use("/api", commentRoute);
 
 const PORT = process.env.PORT || 8000;
 
-// app.use(express.static(path.join(__dirname + "/public")))
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
