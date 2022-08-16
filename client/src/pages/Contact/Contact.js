@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     axios
-      .post("https://v2-website.herokuapp.com/", data)
+      .post("https://v2-website.herokuapp.com/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
