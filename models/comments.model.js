@@ -1,4 +1,5 @@
-const dbConn = require("../config/db.config");
+const path = require('path');
+const dbConn = require(path.join(__dirname, "../config/db.config"));
 
 const AllComments = function (comment) {
   this.comment = comment.comment;
