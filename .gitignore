@@ -23,7 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 
-config/
+/config
+/db.config
 .env
 # Local Netlify folder
 .netlify
