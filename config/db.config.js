@@ -1,16 +1,10 @@
 const mysql = require("mysql");
-require("dotenv").config()
-
-const HOST = process.env.HOST
-const USER = process.env.USER
-const PASSWORD = process.env.PASSWORD
-const DATABASE = process.env.DATABASE
 
 let dbConn = null;
 function handleDisconnect() {
   dbConn = mysql.createConnection({
     host: 'us-cdbr-east-06.cleardb.net',
-    use: 'b09844508cb47a',
+    user: 'b09844508cb47a',
     password: '24216c2a',
     database: 'heroku_bcd43557b2a1ae0'
   });
