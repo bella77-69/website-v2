@@ -16,12 +16,15 @@ app.use(bodyParser.json());
 app.use(serveStatic(__dirname + '/build'));
 app.use("/api", commentRoute);
 
+app.use(express.static('build'));
+app.get('*', function (req, res) {
+  res.sendFile('index.html');
+});
 
-
-app.use(express.static(path.join(__dirname, './build')))
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./build", "index.html"))
-})
+// app.use(express.static(path.join(__dirname, './build')))
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./build", "index.html"))
+// })
 
 // // Other app.use middleware
 // app.use(express.static(path.join(__dirname, "client", "build")));
