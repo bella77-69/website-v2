@@ -18,10 +18,10 @@ app.use("/api", commentRoute);
 
 
 
-// app.use(express.static(path.join(__dirname, './build')))
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./build", "index.html"))
-// })
+app.use(express.static(path.join(__dirname, './build')))
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./build", "index.html"))
+})
 
 // // Other app.use middleware
 // app.use(express.static(path.join(__dirname, "client", "build")));
@@ -32,13 +32,13 @@ app.use("/api", commentRoute);
 // });
  
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("/build"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname + "/client/build/index.html"));
+// });
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
