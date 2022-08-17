@@ -6,22 +6,22 @@ require("dotenv").config();
 const app = express();
 const commentRoute = require("./routes/commentsRoute");
 const path = require("path");
-const serveStatic = require('serve-static');
+// const serveStatic = require('serve-static');
 
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(serveStatic(__dirname + '/client/dist'));
+// app.use(serveStatic(__dirname + '/client/build'));
 app.use("/api", commentRoute);
 
-const PORT = process.env.PORT || 8000;
 
-// app.use(express.static(path.resolve(__dirname, './client/build')))
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "./client/build", "index.html"))
-// })
+
+app.use(express.static(path.join(__dirname, './build')))
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./build", "index.html"))
+})
 
 // // Other app.use middleware
 // app.use(express.static(path.join(__dirname, "client", "build")));
@@ -32,14 +32,14 @@ const PORT = process.env.PORT || 8000;
 // });
  
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
-});
-
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname + "/client/build/index.html"));
+// });
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
 });

@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const path = require('path');
-const commentController = require(path.join(__dirname, "../controllers/comment.controller"));
+const commentController = require("../controllers/comment.controller");
 
 //get all comments
 router.get("/", commentController.getAllComments);
