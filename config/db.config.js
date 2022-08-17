@@ -9,10 +9,10 @@ const DATABASE = process.env.DATABASE
 let dbConn = null;
 function handleDisconnect() {
   dbConn = mysql.createConnection({
-    host: HOST,
-    use: USER,
-    password: PASSWORD,
-    database: DATABASE
+    host: 'us-cdbr-east-06.cleardb.net',
+    use: 'b09844508cb47a',
+    password: '24216c2a',
+    database: 'heroku_bcd43557b2a1ae0'
   });
 
 
