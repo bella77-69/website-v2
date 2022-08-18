@@ -28,15 +28,6 @@ if (process.env.NODE_ENV == "production") {
   app.get("*", (req, res) => {
     res.sendFile(__dirname + '/../static/index.html');
   });
-  app.get("/*", (req, res) => {
-    res.sendFile('public/index.html', {root: path.dirname(__dirname)})
-  });
-  app.get("/projects", (req, res) => {
-    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
-  });
-  app.get("/contact", (req, res) => {
-    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
-  });
 }
 
 const PORT = process.env.PORT || 8000;
