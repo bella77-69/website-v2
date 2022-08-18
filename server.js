@@ -23,13 +23,13 @@ app.use("/api", commentRoute);
  
 
 if (process.env.NODE_ENV == "production") {
-  app.use(express.static("build"));
+  app.use(serveStatic(__dirname + '/build'));
 
   app.get("*", (req, res) => {
     res.sendFile('index.html');
   });
-  app.get("/about", (req, res) => {
-    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.resolve(__dirname,  "build", "redirects"));
   });
   app.get("/projects", (req, res) => {
     res.sendFile(path.resolve(__dirname,  "build", "index.html"));
