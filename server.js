@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
 
 // for local env, use /client/public folder
 else {
-  app.use(express.static(path.join(__dirname, '/client/public')));
+  app.use(express.static(path.join(__dirname, 'build')));
 }
 
 // server the client index.html file for all requests
