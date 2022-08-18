@@ -34,3 +34,10 @@ $fontfamily: 'IBM Plex Sans', sans-serif;
     @content;
     }
 }
+
+//media breakpoints for xldesktop 
+@mixin xldesktop {
+  @media screen and (min-width: 1880px) {
+    @content;
+    }
+}
