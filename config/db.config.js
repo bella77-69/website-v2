@@ -1,14 +1,14 @@
 const mysql = require("mysql");
+dotenv.config({ path: __dirname + "/.env" });
 
 let dbConn = null;
 function handleDisconnect() {
   dbConn = mysql.createConnection({
-    host: 'us-cdbr-east-06.cleardb.net',
-    user: 'b09844508cb47a',
-    password: '24216c2a',
-    database: 'heroku_bcd43557b2a1ae0'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
   });
-
 
   dbConn.connect(function (err) {
     if (err) {
