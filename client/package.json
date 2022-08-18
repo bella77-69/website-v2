@@ -45,10 +45,8 @@
     "root": "build/",
     "clean_urls": false,
     "routes": {
-      "/**": "index.html",
-      "/about": "index.html",
-      "/projects": "index.html",
-      "/contact": "index.html"
+      "/*": "index.html",
+      "/**": "index.html"
     }
   }
 
