@@ -13,21 +13,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// app.use(serveStatic(__dirname + '/build'));
 app.use("/api", commentRoute);
-
-// app.use(express.static('build'));
-// app.get('*', function (req, res) {
-//   res.sendFile('index.html');
-// });
-
-// if (process.env.NODE_ENV == "production") {
-//   app.use(serveStatic(__dirname + '/build'));
-
-//   app.get("*", (req, res) => {
-//     res.sendFile(__dirname + '/../static/index.html');
-//   });
-// }
 
 if (process.env.NODE_ENV === "production") {
   app.use(serveStatic(__dirname + "/build"));
