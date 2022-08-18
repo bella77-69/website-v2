@@ -21,20 +21,19 @@ app.use("/api", commentRoute);
 //   res.sendFile('index.html');
 // });
  
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("/build"));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./build/index.html"));
+  });
 }
 
-// for local env, use /client/public folder
 else {
-  app.use(serveStatic(path.join(__dirname + '/build')));
+  app.use(express.static(path.join(__dirname, '/client/public')));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  });
 }
-
-// server the client index.html file for all requests
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/public/index.html"));
-});
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, (req, res) => {
