@@ -13,22 +13,29 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(serveStatic(__dirname + '/build'));
-app.use("/", commentRoute);
+// app.use(serveStatic(__dirname + '/build'));
+app.use("/api", commentRoute);
 
-app.use(express.static('build'));
-app.get('*', function (req, res) {
-  res.sendFile('index.html');
-});
+// app.use(express.static('build'));
+// app.get('*', function (req, res) {
+//   res.sendFile('index.html');
+// });
  
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("/build"));
+}
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname + "/client/build/index.html"));
-// });
+// for local env, use /client/public folder
+else {
+  app.use(express.static(path.join(__dirname, '/client/public')));
+}
+
+// server the client index.html file for all requests
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/public/index.html"));
+});
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
