@@ -21,17 +21,21 @@ app.use("/api", commentRoute);
 //   res.sendFile('index.html');
 // });
  
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("/build"));
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./build/index.html"));
-  });
-}
 
-else {
-  app.use(express.static(path.join(__dirname, '/client/public')));
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static("build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile('index.html');
+  });
+  app.get("/about", (req, res) => {
+    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+  });
+  app.get("/projects", (req, res) => {
+    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+  });
+  app.get("/contact", (req, res) => {
+    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
   });
 }
 
