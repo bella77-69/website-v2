@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-dotenv.config({ path: __dirname + "/.env" });
+require("dotenv").config();
 
 let dbConn = null;
 function handleDisconnect() {
