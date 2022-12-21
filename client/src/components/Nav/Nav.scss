@@ -3,11 +3,17 @@
 .nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 100%;
     background-color: $background;
     position: relative;
 
     &-container {
     flex-direction: column;
+    }
+
+    &-container__box {
+    margin-right: 0;
     }
 
     &-logo {
@@ -16,6 +22,8 @@
   
     &-bar {
     color: $blackmat !important;
+    font-weight: 600;
+    font-size: 1rem;
 
         &:hover {
         color: $fontlight !important;

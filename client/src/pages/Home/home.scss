@@ -1,15 +1,18 @@
 @import "../../styles/mixins";
 
 /* Variables */
-$bg-image: "../../assets/images/background.jpg";
-$bg-overlay: rgba(32, 32, 32, 0.7);
-$primary-color: #FFFFFF;
+$bg-image: "../../assets/images/background1.png";
+// $bg-overlay: rgba(32, 32, 32, 0.7);
+$bg-overlay: rgba(19, 19, 19, 0.7);
+$primary-color: #f0f1f2;
+// $primary-color: rgb(1, 1, 1);
 $secondary-color: #fcf9fb;
 
 /* Mixins */
 @mixin bg-images(
-    $image-path: "../../assets/images/background.jpg",
+    $image-path: "../../assets/images/background1.png",
     $overlay-color: rgba(255,255,255,0.2),
+    
     $position: center center) {
     position: relative;
 
@@ -39,7 +42,7 @@ header {
     $overlay-color: $bg-overlay
   );
   padding: 1.25rem;
-  text-align: center;
+  // text-align: center;
   height: 30vh;
 
     @include tablet {
@@ -51,19 +54,20 @@ header {
     height: 90vh;
     }
   
-  .container {
-   margin: 0;
-   width: 100%;
-   vertical-align: middle;
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
 
      @include tablet {
-     padding: 6rem;
+     padding: 3rem;
      }
 
      @include desktop {
      max-width: 1280px;
-     padding: 25vh;
-     margin-left: 3.5%;
+     padding: 20vh;
+     margin-left: 0%;
      }
 
      @include xldesktop {
@@ -75,34 +79,31 @@ header {
 }
   
 h1 {
-  border-bottom: 2px solid $primary-color;
-  border-top: 2px solid $primary-color;
   color: $primary-color;
   font-family: $fontfamily;
+  font-weight: 600;
   font-size: 1rem;
   margin: 0;
-
 
     @include tablet {
     font-size: 1.5rem;
     }
 
     @include desktop {
-    font-size: 2rem;
+    font-size: 2.2rem;
     }
 }
   
 h3 {
-  color: $secondary-color;
+  color: $primary-color;
   font-family: $fontfamily;
-  font-size: .875rem;
-  font-style: italic;
-  font-weight: 300;
+  font-size: .75rem;
+  font-weight: 500;
   margin: 0;
-  padding-top: 1rem;
+  padding-top: .5rem;
 
     @include tablet {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: 2rem;
     }
 
@@ -111,15 +112,15 @@ h3 {
     }
 }
 
-h5 {
+h4 {
   color: $secondary-color;
   font-family: $fontfamily;
   font-size: .75rem;
   font-weight: 200;
-  font-style: italic;
-  padding-top: .3125rem;
+  font-style: oblique;
+  padding-top: 1rem;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.35;
 
     @include tablet {
     font-size: 1rem;

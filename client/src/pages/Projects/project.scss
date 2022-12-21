@@ -2,7 +2,7 @@
 
 .project {
     padding: 20px 0;
-    background-color: $pageBackground;
+    background-color: $fontlight;
 
     &-shadow {
     position: relative;
@@ -94,14 +94,14 @@
     &-content {
 
         @include mobile {
-        border-top: 2px solid $lightgrey;
+        border-top: 2px solid $cement;
         margin: 1rem;
         }
 
         @include tablet  {
         padding-left: .9375rem;
         margin-left: .312rem;
-        border-left: 2px solid $lightgrey;
+        border-left: 2px solid $cement;
         margin-bottom: 1.875rem;
         max-width: 34.375rem;
         }
@@ -143,9 +143,9 @@
     font-size: .875rem;
     line-height: 1rem;
     padding-bottom: 1rem;
-    color: $font;
+    color: $blacker;
     padding-right: .5rem;
-    font-weight: 200;
+    font-weight: 350;
 
         @include tablet {
         font-size: .937rem;
@@ -156,7 +156,6 @@
         @include desktop {
         text-align: left;
         font-size: 1.187rem;
-        font-weight: 200;
         line-height: 25px;
         width: 100%;
         padding-right: 0;
@@ -167,7 +166,7 @@
     text-align: left;
     font-size: .875rem;
     margin: 20px 0px 10px 0px;
-    color: $black;
+    color: $blackmat;
         
         @include tablet {
         font-size: 1rem;
@@ -246,8 +245,23 @@
 
         @include tablet {
         flex-direction: row;
+        width: 100%;
         }
     }
+
+    &-list {
+        font-size: .875rem;
+        color: $blacker;
+        font-weight: 350;
+
+        @include tablet {
+        font-size: 0.937rem;
+        }
+
+        @include desktop {
+            font-size: 1.187rem;
+    }
+}
 
     &-demofullimg {
     width: 18.75rem;
@@ -264,6 +278,7 @@
     &-column {
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 
         @include mobile {
@@ -275,7 +290,7 @@
         }
 
         @include desktop {
-        width: 40%;
+        width: 45%;
         }
     }
 
@@ -285,7 +300,7 @@
     padding-right: 1.25rem;
     text-align: left;
     font-size: .75rem;
-    color: $grey;
+    color: $blackmat;
 
         @include tablet {
         padding-left: 1.25rem;

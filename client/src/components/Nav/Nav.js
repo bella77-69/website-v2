@@ -1,15 +1,15 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Nav.scss";
-import logo from "../../assets/logo/logo1.png";
+import logo from "../../assets/logo/logo4.png";
 
 export default function Header() {
   return (
     <div className="nav">
       <Navbar bg="transparent" expand="lg">
         <Container className="nav-container">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="nav-container__box">
             <img
-              className="nav-logo d-inline-block align-middle mr-2"
+              className="nav-logo d-inline-block align-middle"
               width="200"
               alt="logo-img"
               src={logo}

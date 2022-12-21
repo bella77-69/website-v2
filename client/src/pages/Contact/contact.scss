@@ -2,14 +2,16 @@
 
 .contact-section {
     padding: 20px 0;
-    background-color: $pageBackground;
+    background-color: $fontlight;
 }
 
 .btn {
-    background-color: $background;
+    background-color: transparent;
             
         &:hover {
-        color: $fontlight;
+        color: $blackmat;
+        font-weight: 800;
+        text-transform: uppercase;
         }
 }
 

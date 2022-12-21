@@ -5,28 +5,32 @@
     letter-spacing: 0;
     line-height: 32px;
     margin: 0 0 39px;
-    padding-top: 1.5rem;
+    // padding-top: 1.5rem;
     position: relative;
     text-transform: uppercase;
-    color: #000;
+    color: $blackmat;
 
     @include tablet {
         font-size: 1.5rem;
-        padding-top: 2rem;
+        // padding-top: 2rem;
         }
 
         @include desktop {
         font-size: 1.75rem;
-        padding-top: 5rem;
+        // padding-top: 5rem;
         }
 
 }
 .title::after {
-    background: #84b0f1 none repeat scroll 0 0;
-    bottom: 0;
+    background: $background none repeat scroll 0 0;
+    bottom: -1px;
     content: "";
     height: 2px;
     left: 0;
     position: absolute;
     width: 54px;
+
+    @include desktop {
+    bottom: -5px;
+    }
 }

@@ -2,7 +2,11 @@
 
 .aboutus-section {
     padding: 1.25rem 0;
-    background-color: $pageBackground;
+    background-color: $fontlight;
+
+    @include desktop {
+    padding: 3rem 0;
+    }
 }
 
 .container {
@@ -10,7 +14,7 @@
 }
 
 .aboutus-text {
-    color: #4d4c4c;
+    color: $blackmat;
     font-size: .8125rem; 
     margin-top: 1rem;
 

@@ -2,6 +2,9 @@ import lash from "../../assets/projects/lash.jpg";
 import lash2 from "../../assets/projects/lash2.jpg";
 import movie from "../../assets/projects/movie2.jpg";
 import movie2 from "../../assets/projects/movie.jpg";
+import coffee from "../../assets/projects/coffee.jpg";
+import coffee2 from "../../assets/projects/coffee2.png";
+
 
 export const PrjData = [
   {
@@ -25,5 +28,16 @@ export const PrjData = [
     mobileGif: movie2,
     features: ["NetFlix Clone", "View Trailers"],
     techs: ["React", "React-YouTube", "React-Router", "Sass", "Axios"],
+  },
+  {
+    id: 3,
+    name: "Steamy Cup",
+    github: "https://github.com/bella77-69/comp-1850-final-project",
+    website: "",
+    desc: "BCIT final project. Designed and implemented a content rich, well styled, semantic, and responsive multi page website",
+    desktopGif: coffee,
+    mobileGif: coffee2,
+    features: ["Ecommerce", "Small businness"],
+    techs: ["HTML", "CSS", "JavaScript"],
   },
 ];

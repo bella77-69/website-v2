@@ -5,6 +5,7 @@ import "./about.scss";
 
 function About() {
   return (
+    <section className="aboutus-section">
     <div className="container">
       <Title title="About Me" />
       <div className="row">
@@ -37,6 +38,7 @@ function About() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
