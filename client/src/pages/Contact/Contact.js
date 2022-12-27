@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     axios
-    .post("/api", data)
+    .post("http://localhost:8000/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
