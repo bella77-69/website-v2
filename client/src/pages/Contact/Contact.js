@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     axios
-    .post("https://vercel.app/api", data)
+    .post("https://website-v2-nzjmeth1l-bella77-69.vercel.app/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
