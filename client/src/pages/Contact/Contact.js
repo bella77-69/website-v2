@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     axios
-    .post("/api", data)
+    .post("https://vercel.app/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
