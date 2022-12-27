@@ -40,10 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "root": "build/",
-  "clean_urls": false,
-  "routes": {
-    "/**": "index.html"
   }
 }
