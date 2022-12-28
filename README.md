@@ -3,7 +3,7 @@ Personal Portfolio Web App <br/>
 </h2>
 
 <div align="center">
-<img src="./client/src/assets/images/main.jpg" alt="demo"/>
+<img src="./main.jpg" alt="demo"/>
 </div>
 
 ## Built With
