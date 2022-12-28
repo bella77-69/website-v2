@@ -3,7 +3,7 @@ Personal Portfolio Web App <br/>
 </h2>
 
 <div align="center">
-<img src="./client/src/assets/images/main.jpg" alt="demo"/>
+<img src="./client/src/assets/images/scrennshot.png" alt="demo"/>
 </div>
 
 ## Built With
@@ -16,7 +16,7 @@ Bella Lashes Inc. was built using these technologies:
 - React-Icons
 - MySQL
 - Bootstrap
-- Heroku
+- Netlify
 
 ## 🛠 Installation and Setup Instructions
 
