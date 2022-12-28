@@ -66,8 +66,8 @@ header {
 
      @include desktop {
      max-width: 1280px;
-     padding: 20vh;
-     margin-left: 0%;
+    //  padding: 20vh;
+    //  margin-left: 0%;
      }
 
      @include xldesktop {
@@ -91,6 +91,7 @@ h1 {
 
     @include desktop {
     font-size: 2.2rem;
+    padding-top: 10rem;
     }
 }
   
@@ -130,3 +131,4 @@ h4 {
     font-size: 1.5625rem;
     }
 }
+
