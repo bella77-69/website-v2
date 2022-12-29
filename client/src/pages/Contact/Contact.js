@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     axios
-    .post("http://localhost:8000/api", data)
+    .post("https://technotes-api.onrender.com/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
