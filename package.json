@@ -1,8 +1,8 @@
 {
-  "name": "ebsite-v2",
+  "name": "website-v2",
   "version": "1.0.0",
   "description": "portfolio website",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "cd server && npm install  && cd ../client && npm install && npm run build",
     "start": "node server/server.js",
