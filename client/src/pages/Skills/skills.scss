@@ -1,0 +1,72 @@
+@import '../../styles/mixins';
+
+.contact-section {
+    padding: 20px 0;
+    background-color: $fontlight;
+}
+
+
+.card-title {
+    border-bottom: 1px solid $fontlight;
+    padding-top: .875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $blacker;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
+        }
+
+}
+
+.card-content{
+    padding-bottom: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    margin-right: -15px;
+    margin-left: -15px;
+
+        @include tablet {
+        width: 100%;
+        }
+
+        @include desktop {
+        width: 85%;
+        }
+}
+
+.text-center {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.col {
+    padding: .625rem;
+}
+.skills-text {
+    color: $blacker;
+    font-size: .75rem;
+    font-weight: 400;
+    font-style: normal;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+
+        @include desktop {
+            font-size: 1rem;
+        }
+
+}

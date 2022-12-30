@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Nav.scss";
-import logo from "../../assets/logo/logo4.png";
+import logo from "../../assets/logo/logo.png";
 
 export default function Header() {
   return (
@@ -27,8 +27,8 @@ export default function Header() {
               <Nav.Link href="/projects" className="nav-bar">
                 Projects
               </Nav.Link>
-              <Nav.Link href="/contact" className="nav-bar">
-                Contact
+              <Nav.Link href="/skills" className="nav-bar">
+                Skills
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -47,7 +47,9 @@ const Projects = () => {
                             <div className="project-subtitle">FEATURES</div>
                             <ul className="project-notes">
                               {website.features.map((feature, index) => (
-                                <li className="project-list" key={index}>{feature}</li>
+                                <li className="project-list" key={index}>
+                                  {feature}
+                                </li>
                               ))}
                             </ul>
                           </div>
@@ -55,7 +57,9 @@ const Projects = () => {
                             <div className="project-subtitle">TECHNOLOGIES</div>
                             <ul className="project-notes">
                               {website.techs.map((tech, index) => (
-                                <li className="project-list" key={index}>{tech}</li>
+                                <li className="project-list" key={index}>
+                                  {tech}
+                                </li>
                               ))}
                             </ul>
                           </div>
@@ -92,7 +96,9 @@ const Projects = () => {
                               <div className="project-subtitle">FEATURES</div>
                               <ul className="project-notes">
                                 {app.features.map((feature, index) => (
-                                  <li className="project-list" key={index}>{feature}</li>
+                                  <li className="project-list" key={index}>
+                                    {feature}
+                                  </li>
                                 ))}
                               </ul>
                             </div>
@@ -102,7 +108,9 @@ const Projects = () => {
                               </div>
                               <ul className="project-notes">
                                 {app.techs.map((module, index) => (
-                                  <li className="project-list" key={index}>{module}</li>
+                                  <li className="project-list" key={index}>
+                                    {module}
+                                  </li>
                                 ))}
                               </ul>
                             </div>
@@ -132,7 +140,8 @@ const Projects = () => {
                             }}
                           >
                             {prj.tags.map((tag, index) => (
-                              <div key={index}
+                              <div
+                                key={index}
                                 style={{
                                   textAlign: "left",
                                   backgroundColor: tag.color,
@@ -172,7 +181,9 @@ const Projects = () => {
                                 <div className="project-subtitle">FEATURES</div>
                                 <ul className="project-notes">
                                   {prj.features.map((feature, index) => (
-                                    <li className="project-list" key={index}>{feature}</li>
+                                    <li className="project-list" key={index}>
+                                      {feature}
+                                    </li>
                                   ))}
                                 </ul>
                               </div>
@@ -182,7 +193,9 @@ const Projects = () => {
                                 </div>
                                 <ul className="project-notes">
                                   {prj.techs.map((tech, index) => (
-                                    <li className="project-list" key={index}>{tech}</li>
+                                    <li className="project-list" key={index}>
+                                      {tech}
+                                    </li>
                                   ))}
                                 </ul>
                               </div>
@@ -209,7 +222,9 @@ const Projects = () => {
                                 <div className="project-subtitle">FEATURES</div>
                                 <ul className="notes">
                                   {prj.features.map((feature, index) => (
-                                    <li className="project-list" key={index}>{feature}</li>
+                                    <li className="project-list" key={index}>
+                                      {feature}
+                                    </li>
                                   ))}
                                 </ul>
                               </div>
@@ -219,7 +234,9 @@ const Projects = () => {
                                 </div>
                                 <ul className="notes">
                                   {prj.techs.map((tech, index) => (
-                                    <li className="project-list" key={index}>{tech}</li>
+                                    <li className="project-list" key={index}>
+                                      {tech}
+                                    </li>
                                   ))}
                                 </ul>
                               </div>
