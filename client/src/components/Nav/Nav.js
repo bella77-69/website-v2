@@ -27,8 +27,8 @@ export default function Header() {
               <Nav.Link href="/projects" className="nav-bar">
                 Projects
               </Nav.Link>
-              <Nav.Link href="/skills" className="nav-bar">
-                Skills
+              <Nav.Link href="/contact" className="nav-bar">
+               Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -2,10 +2,8 @@
 
 /* Variables */
 $bg-image: "../../assets/images/background1.png";
-// $bg-overlay: rgba(32, 32, 32, 0.7);
 $bg-overlay: rgba(19, 19, 19, 0.7);
 $primary-color: #f0f1f2;
-// $primary-color: rgb(1, 1, 1);
 $secondary-color: #fcf9fb;
 
 /* Mixins */
@@ -42,16 +40,18 @@ header {
     $overlay-color: $bg-overlay
   );
   padding: 1.25rem;
-  // text-align: center;
-  height: 30vh;
+  // height: 30vh;
 
     @include tablet {
-    height: 66vh;
-    padding: 3rem;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
     }
 
     @include desktop {
-    height: 90vh;
+    height: 100vh;
+    padding-left: 5rem;
     }
   
   .box {
@@ -60,14 +60,12 @@ header {
     align-items: flex-start;
     width: 60%;
 
-     @include tablet {
-     padding: 3rem;
-     }
-
+    @include tablet {
+    width: 50%;
+    }
      @include desktop {
      max-width: 1280px;
-    //  padding: 20vh;
-    //  margin-left: 0%;
+     width: 45%;
      }
 
      @include xldesktop {
@@ -91,7 +89,7 @@ h1 {
 
     @include desktop {
     font-size: 2.2rem;
-    padding-top: 10rem;
+    // padding-top: 10rem;
     }
 }
   
