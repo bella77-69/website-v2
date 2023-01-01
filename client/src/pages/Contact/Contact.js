@@ -28,7 +28,7 @@ export default function Contact(props) {
     };
 
     axios
-      .post("https://chantelle-website-v2.netlify.app/api", data)
+      .post("/api", data)
       .then((response) => {
         if (response.status === 200) {
           setComment((prevState) => ({
