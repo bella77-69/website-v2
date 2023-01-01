@@ -15,6 +15,13 @@ app.use("/api", commentRoute);
 
 
 const PORT = process.env.PORT || 8000;
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+app.get("*", (req, res) => {
+  res.sendFile
+});
 
 app.listen(PORT, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
