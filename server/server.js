@@ -8,19 +8,16 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/api", commentRoute);
 
 
 const PORT = process.env.PORT || 8000;
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
 
-app.get("/api", (req, res) => {
-  res.sendFile
+app.get('/', (req, res) => {
+  res.send('Hi There')
 });
 
 app.listen(PORT, (req, res) => {
