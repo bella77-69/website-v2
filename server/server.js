@@ -8,17 +8,13 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/api", commentRoute);
 
 
 const PORT = process.env.PORT || 8000;
-
-app.get('/', (req, res) => {
-  res.send('Hi There')
-});
 
 app.listen(PORT, (req, res) => {
   console.log(`Server connected to port: ${PORT}`);
