@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04a640b8.css",
+    "main.js": "/static/js/main.5705c970.js",
+    "static/media/coffee.jpg": "/static/media/coffee.fb2545dda10c0dabe465.jpg",
+    "static/media/movie.jpg": "/static/media/movie.cca23118e95a399bab01.jpg",
+    "static/media/shop.jpg": "/static/media/shop.9a86b1f869a14823b74c.jpg",
+    "static/media/food.jpg": "/static/media/food.d50f9c0f4c2d518e4faf.jpg",
+    "static/media/movie2.jpg": "/static/media/movie2.572d07c664b5f4e41fee.jpg",
+    "static/media/me.jpg": "/static/media/me.1e58ee37ae70a87fc556.jpg",
+    "static/media/coffee2.png": "/static/media/coffee2.00f4bdea5bca77f2a3e3.png",
+    "static/media/lash2.jpg": "/static/media/lash2.1a3a57b830ae0737546b.jpg",
+    "static/media/brain.jpg": "/static/media/brain.fa4da32fa3a8c5ab6f45.jpg",
+    "static/media/band.jpg": "/static/media/band.e1fe5a6177f5082bc458.jpg",
+    "static/media/background1.png": "/static/media/background1.31fb63a6fc464fb56bd6.png",
+    "static/media/lash.jpg": "/static/media/lash.18b81e158616a4d8aaab.jpg",
+    "static/media/wine.png": "/static/media/wine.4919f7a4620aacd31f24.png",
+    "static/media/logo.png": "/static/media/logo.5748e87494c2ea72fbb0.png",
+    "index.html": "/index.html",
+    "main.04a640b8.css.map": "/static/css/main.04a640b8.css.map",
+    "main.5705c970.js.map": "/static/js/main.5705c970.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04a640b8.css",
+    "static/js/main.5705c970.js"
+  ]
+}
