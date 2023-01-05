@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use("/api", commentRoute);
 
-const DB_PORT = process.env.DB_PORT || 6723;
+const DB_PORT = process.env.DB_PORT || 5000;
 
 app.listen(DB_PORT, (req, res) => {
   console.log(`Server connected to port: ${DB_PORT}`);
