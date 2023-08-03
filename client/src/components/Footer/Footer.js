@@ -20,7 +20,7 @@ export default function footer() {
               <li>
                 {" "}
                 <a href="mailto:mrspascer@hotmail.com" className="footer-icon">
-                  <HiOutlineMail />
+                  <HiOutlineMail className="footer-svg"/>
                 </a>
               </li>
               <li>
@@ -29,19 +29,19 @@ export default function footer() {
                   href="https://www.linkedin.com/in/chantellepasceri/"
                   className="footer-icon"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="footer-svg"/>
                 </a>
               </li>
               <li>
                 {" "}
                 <a href="https://twitter.com/home" className="footer-icon">
-                  <FaTwitter />
+                  <FaTwitter className="footer-svg"/>
                 </a>
               </li>
               <li>
                 {" "}
                 <a href="https://github.com/bella77-69" className="footer-icon">
-                  <FaGithub />
+                  <FaGithub className="footer-svg"/>
                 </a>
               </li>
             </ul>
