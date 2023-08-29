@@ -1,9 +1,9 @@
 import lash from "../../assets/projects/lash.jpg";
-import lash2 from "../../assets/projects/lash2.jpg";
-import movie from "../../assets/projects/movie2.jpg";
-import movie2 from "../../assets/projects/movie.jpg";
+import lash2 from "../../assets/projects/lash1.jpg";
+import movie from "../../assets/projects/movie.jpg";
+import movie2 from "../../assets/projects/movie1.jpg";
 import coffee from "../../assets/projects/coffee.jpg";
-import coffee2 from "../../assets/projects/coffee2.png";
+import coffee2 from "../../assets/projects/coffee1.png";
 
 
 export const PrjData = [

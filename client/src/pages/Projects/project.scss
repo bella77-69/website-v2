@@ -196,9 +196,11 @@
         }
 
         @include desktop {
-        width: 15.625rem;
+        // width: 15.625rem;
         }
     }
+
+
 
     &-desktopDemo {
     object-fit: contain;
