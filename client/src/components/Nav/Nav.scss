@@ -3,6 +3,7 @@
 .nav {
   background-color: $background;
   display: block;
+  
   .nav-container {
     display: flex;
     flex-direction: column;
@@ -13,11 +14,19 @@
       img {
         max-width: 100%;
         height: auto;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.5s ease; /* Add opacity transition */
         cursor: pointer;
+        opacity: 0; /* Start with zero opacity */
 
         &:hover {
           transform: scale(1.1);
+        }
+      }
+
+      // Fade in the logo when it becomes visible
+      &.loaded {
+        img {
+          opacity: 1;
         }
       }
     }
@@ -25,7 +34,8 @@
     .nav-link {
       color: $blackmat;
       font-weight: bold;
-
+      opacity: 0; /* Start with zero opacity */
+      transition: opacity 0.5s ease; /* Add opacity transition */
 
       &:hover {
         color: $fontlight;
@@ -33,14 +43,22 @@
     }
   }
 
+  // Add animation for nav-links fade-in
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 768px) { 
     .nav-container {
-      flex-direction: row; 
       align-items: center;
       padding: 10px;
 
       .nav-logo {
-        margin-right: 20px; 
         margin-bottom: 0; 
       }
 
@@ -50,8 +68,18 @@
       }
       .navbar-nav {
         flex-direction: row;
-
+        align-items: center;
+        padding: 1rem 0;
       }
+      .navbar-toggler {
+        align-items: center;
+      }
+    }
+
+    // Apply the fade-in animation for nav-links
+    .nav-link {
+      animation: fadeIn 0.5s ease forwards;
+      animation-delay: 0.2s; /* Delay the animation for a smoother effect */
     }
   }
 
@@ -72,8 +100,23 @@
       .nav-link {
         margin-right: 0;
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
       }
+    }
+  }
 
+  @media (min-width: 1280px){
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      margin: 0 2rem;
+    }
+    .nav-logo {
+      margin-right: 20px; 
+      margin-left: 0;
     }
   }
 }
