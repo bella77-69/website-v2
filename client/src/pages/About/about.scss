@@ -1,52 +1,53 @@
 @import '../../styles/mixins';
 
 .aboutus-section {
-    padding: 1.25rem 0;
-    background-color: $fontlight;
+  padding: 1.25rem 0;
+  background-color: $fontlight;
 
-    @include desktop {
+  @include desktop {
     padding: 3rem 0;
-    }
+  }
 }
 
 .container {
-    padding: 1.25rem;
+  padding: 1.25rem;
 }
 
 .aboutus-text {
-    color: $blackmat;
-    font-size: .8125rem; 
-    margin-top: 1rem;
+  color: $blackmat;
+  font-size: 0.8125rem;
+  margin-top: 1rem;
 
-        @include tablet {
-        margin-top: 0;
-        font-size: .875rem;
-        }
+  @include tablet {
+    margin-top: 0;
+    font-size: 0.875rem;
+  }
 
-        @include desktop {
-        font-size: 1.125rem;
-        }
+  @include desktop {
+    font-size: 1.125rem;
+  }
 }
 
 .about-inner {
-	position: relative;
-	padding: 0;
-	overflow: hidden;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
 }
-.about-intro-text {
-    padding-top: 1rem;
 
-        @include tablet {
-        padding-top: 0;
-        flex: 0 0 75%;
-        max-width: 100%;
-    }
-  
+.about-intro-text {
+  padding-top: 1rem;
+
+  @include tablet {
+    padding-top: 0;
+    flex: 0 0 75%;
+    max-width: 100%;
+  }
 }
+
 .img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 

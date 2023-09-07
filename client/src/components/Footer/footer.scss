@@ -1,10 +1,11 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .footer {
   background-color: $background;
   font-size: 15px;
   line-height: 24px;
   color: $fontlight;
+  position: relative;
 
   @include tablet {
     padding: 1rem;
@@ -57,13 +58,33 @@
   }
 
   &-box {
-
     @include tablet {
       display: flex;
       justify-content: flex-end;
     }
   }
 
+  // Scroll to top button styles
+  .scroll-to-top {
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    background-color: $blackmat;
+    color: $fontlight;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .scroll-to-top-icon {
+    font-size: 1.5rem;
+  }
 }
 
 .footer .social-icons a {
@@ -71,7 +92,6 @@
   border-radius: 100%;
   background-color: $blackmat;
 }
-
 
 .copyright-text {
   margin: 0;
@@ -106,7 +126,7 @@
   text-transform: uppercase;
   color: #96a2b2;
   font-weight: 700;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .social-icons a {
@@ -119,9 +139,9 @@
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .social-icons a:active,

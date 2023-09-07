@@ -155,7 +155,7 @@ $secondary-color: #fcf9fb;
   }
 }
 
-header {
+.home {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
   padding: 1.25rem;
 

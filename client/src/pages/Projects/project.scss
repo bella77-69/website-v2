@@ -194,13 +194,7 @@
         margin-bottom: .625rem;
         width: 9.375rem;
         }
-
-        @include desktop {
-        // width: 15.625rem;
-        }
     }
-
-
 
     &-desktopDemo {
     object-fit: contain;
