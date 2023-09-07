@@ -1,59 +1,176 @@
+// @import "../../styles/mixins";
+
+// /* Variables */
+// $bg-image: "../../assets/images/background1.png";
+// $bg-overlay: rgba(19, 19, 19, 0.7);
+// $primary-color: #f0f1f2;
+// $secondary-color: #fcf9fb;
+
+// /* Mixins */
+// @mixin bg-images(
+//     $image-path: "../../assets/images/background1.png",
+//     $overlay-color: rgba(255,255,255,0.2),
+    
+//     $position: center center) {
+//     position: relative;
+
+//     &:before {
+//         background:
+//             linear-gradient(
+//               $overlay-color,
+//               $overlay-color
+//             ),
+//             url($image-path);
+//         background-position: $position;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         bottom: 0;
+//         content: ' ';
+//         left: 0;
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//         z-index: -1;
+//     }
+// }
+
+// header {
+//   @include bg-images(
+//     $image-path: $bg-image,
+//     $overlay-color: $bg-overlay
+//   );
+//   padding: 1.25rem;
+
+//     @include tablet {
+//     height: 60vh;
+//     display: flex;
+//     align-items: center;
+//     padding-left: 2rem;
+//     }
+
+//     @include desktop {
+//     height: 100vh;
+//     padding-left: 5rem;
+//     }
+  
+//   .box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     width: 60%;
+
+//     @include tablet {
+//     width: 50%;
+//     }
+//      @include desktop {
+//      max-width: 1280px;
+//      width: 45%;
+//      }
+
+//      @include xldesktop {
+//       max-width: 2080px;
+//        padding: 25vh;
+//        margin-left: 1%;
+//      }
+//   }
+// }
+  
+// h1 {
+//   color: $primary-color;
+//   font-family: $fontfamily;
+//   font-weight: 600;
+//   font-size: 1rem;
+//   margin: 0;
+
+//     @include tablet {
+//     font-size: 1.5rem;
+//     }
+
+//     @include desktop {
+//     font-size: 2.2rem;
+//     }
+// }
+  
+// h3 {
+//   color: $primary-color;
+//   font-family: $fontfamily;
+//   font-size: .75rem;
+//   font-weight: 500;
+//   margin: 0;
+//   padding-top: .5rem;
+
+//     @include tablet {
+//     font-size: 1.2rem;
+//     padding-top: 2rem;
+//     }
+
+//     @include desktop {
+//     font-size: 1.5625rem;
+//     }
+// }
+
+// h4 {
+//   color: $secondary-color;
+//   font-family: $fontfamily;
+//   font-size: .75rem;
+//   font-weight: 200;
+//   font-style: oblique;
+//   padding-top: 1rem;
+//   margin: 0;
+//   line-height: 1.35;
+
+//     @include tablet {
+//     font-size: 1rem;
+//     }
+
+//     @include desktop {
+//     font-size: 1.5625rem;
+//     }
+// }
+
 @import "../../styles/mixins";
 
-/* Variables */
-$bg-image: "../../assets/images/background1.png";
+// Variables
+$bg-image: "../../assets/images/background.jpg";
 $bg-overlay: rgba(19, 19, 19, 0.7);
 $primary-color: #f0f1f2;
 $secondary-color: #fcf9fb;
 
-/* Mixins */
-@mixin bg-images(
-    $image-path: "../../assets/images/background1.png",
-    $overlay-color: rgba(255,255,255,0.2),
-    
-    $position: center center) {
-    position: relative;
+// Mixins
+@mixin bg-images($image-path: "../../assets/images/background.jpg", $overlay-color: rgba(255, 255, 255, 0.2), $position: center center) {
+  position: relative;
 
-    &:before {
-        background:
-            linear-gradient(
-              $overlay-color,
-              $overlay-color
-            ),
-            url($image-path);
-        background-position: $position;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        content: ' ';
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
-    }
+  &:before {
+    background: linear-gradient($overlay-color, $overlay-color), url($image-path);
+    background-position: $position;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 header {
-  @include bg-images(
-    $image-path: $bg-image,
-    $overlay-color: $bg-overlay
-  );
+  @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
   padding: 1.25rem;
-  // height: 30vh;
 
-    @include tablet {
+  @include tablet {
     height: 60vh;
     display: flex;
     align-items: center;
     padding-left: 2rem;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     height: 100vh;
     padding-left: 5rem;
-    }
-  
+  }
+
   .box {
     display: flex;
     flex-direction: column;
@@ -61,72 +178,70 @@ header {
     width: 60%;
 
     @include tablet {
-    width: 50%;
+      width: 50%;
     }
-     @include desktop {
-     max-width: 1280px;
-     width: 45%;
-     }
 
-     @include xldesktop {
+    @include desktop {
+      max-width: 1280px;
+      width: 45%;
+    }
+
+    @include xldesktop {
       max-width: 2080px;
-       padding: 25vh;
-       margin-left: 1%;
-     }
+      padding: 25vh;
+      margin-left: 1%;
+    }
   }
 }
-  
+
+h1, h3, h4 {
+  font-family: $fontfamily;
+  margin: 0;
+}
+
 h1 {
   color: $primary-color;
-  font-family: $fontfamily;
   font-weight: 600;
   font-size: 1rem;
-  margin: 0;
 
-    @include tablet {
+  @include tablet {
     font-size: 1.5rem;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     font-size: 2.2rem;
-    // padding-top: 10rem;
-    }
+  }
 }
-  
+
 h3 {
   color: $primary-color;
-  font-family: $fontfamily;
-  font-size: .75rem;
   font-weight: 500;
-  margin: 0;
-  padding-top: .5rem;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
 
-    @include tablet {
+  @include tablet {
     font-size: 1.2rem;
     padding-top: 2rem;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     font-size: 1.5625rem;
-    }
+  }
 }
 
 h4 {
   color: $secondary-color;
-  font-family: $fontfamily;
-  font-size: .75rem;
   font-weight: 200;
   font-style: oblique;
+  font-size: 0.75rem;
   padding-top: 1rem;
-  margin: 0;
   line-height: 1.35;
 
-    @include tablet {
+  @include tablet {
     font-size: 1rem;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     font-size: 1.5625rem;
-    }
+  }
 }
-

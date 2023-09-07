@@ -1,38 +1,79 @@
-@import "../../styles/mixins";
+@import "../../styles/mixins"; 
 
 .nav {
+  background-color: $background;
+  display: block;
+  .nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
-    background-color: $background;
-    position: relative;
+    justify-content: center;
 
-    &-container {
-    flex-direction: column;
-    }
-
-    // &-container__box {
-    // margin-right: 0;
-    // }
-
-    &-logo {
-    max-width: 100%;
-    }
-  
-    &-bar {
-    color: $blackmat !important;
-    font-weight: 600;
-    font-size: 1rem;
+    .nav-logo {
+      img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
 
         &:hover {
-        color: $fontlight !important;
+          transform: scale(1.1);
         }
+      }
     }
+
+    .nav-link {
+      color: $blackmat;
+      font-weight: bold;
+
+
+      &:hover {
+        color: $fontlight;
+      }
+    }
+  }
+
+  @media (min-width: 768px) { 
+    .nav-container {
+      flex-direction: row; 
+      align-items: center;
+      padding: 10px;
+
+      .nav-logo {
+        margin-right: 20px; 
+        margin-bottom: 0; 
+      }
+
+      .nav-link {
+        margin-right: 20px; 
+        margin-bottom: 0; 
+      }
+      .navbar-nav {
+        flex-direction: row;
+
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-container {
+      padding: 10px;
+
+      .navbar-brand {
+        margin-right: 0;
+      }
+
+      .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+    }
+  }
 }
-
-#basic-nav-dropdown {
-    color: $blackmat;
-}
-
-
