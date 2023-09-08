@@ -136,6 +136,19 @@ $bg-overlay: rgba(19, 19, 19, 0.7);
 $primary-color: #f0f1f2;
 $secondary-color: #fcf9fb;
 
+// Font Sizes
+$font-size-h1-mobile: 1rem;
+$font-size-h1-tablet: 1.5rem;
+$font-size-h1-desktop: 2.2rem;
+
+$font-size-h3-mobile: 0.75rem;
+$font-size-h3-tablet: 1.2rem;
+$font-size-h3-desktop: 1.5625rem;
+
+$font-size-h4-mobile: 0.75rem;
+$font-size-h4-tablet: 1rem;
+$font-size-h4-desktop: 1.5625rem;
+
 // Mixins
 @mixin bg-images($image-path: "../../assets/images/background.jpg", $overlay-color: rgba(255, 255, 255, 0.2), $position: center center) {
   position: relative;
@@ -155,9 +168,14 @@ $secondary-color: #fcf9fb;
   }
 }
 
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 .home {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
   padding: 1.25rem;
+
 
   @include tablet {
     height: 60vh;
@@ -202,30 +220,30 @@ h1, h3, h4 {
 h1 {
   color: $primary-color;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: $font-size-h1-mobile;
 
   @include tablet {
-    font-size: 1.5rem;
+    font-size: $font-size-h1-tablet;
   }
 
   @include desktop {
-    font-size: 2.2rem;
+    font-size: $font-size-h1-desktop;
   }
 }
 
 h3 {
   color: $primary-color;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: $font-size-h3-mobile;
   padding-top: 0.5rem;
 
   @include tablet {
-    font-size: 1.2rem;
+    font-size: $font-size-h3-tablet;
     padding-top: 2rem;
   }
 
   @include desktop {
-    font-size: 1.5625rem;
+    font-size: $font-size-h3-desktop;
   }
 }
 
@@ -233,15 +251,15 @@ h4 {
   color: $secondary-color;
   font-weight: 200;
   font-style: oblique;
-  font-size: 0.75rem;
+  font-size: $font-size-h4-mobile;
   padding-top: 1rem;
   line-height: 1.35;
 
   @include tablet {
-    font-size: 1rem;
+    font-size: $font-size-h4-tablet;
   }
 
   @include desktop {
-    font-size: 1.5625rem;
+    font-size: $font-size-h4-desktop;
   }
 }

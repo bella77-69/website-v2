@@ -12,7 +12,7 @@ export default function Header() {
           <Navbar.Brand href="/" className="nav-container__box">
             <img
               className="nav-logo d-inline-block align-middle"
-              width="200"
+              // width="200"
               alt="logo-img"
               src={logo}
             />

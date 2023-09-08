@@ -8,8 +8,8 @@ function Home() {
         <h1>- I am Chantelle -</h1>
         <h3>Full-Stack Web Developer</h3>
         <h4>
-          Building state-of-the-art, easy to use, user-friendly websites and
-          applications is truly a passion of mine!
+          Crafting cutting-edge, user-centric websites and applications is my
+          true passion!
         </h4>
       </div>
     </header>

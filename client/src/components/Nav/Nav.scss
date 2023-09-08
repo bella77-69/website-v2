@@ -11,10 +11,9 @@
     justify-content: center;
 
     .nav-logo {
+      height: 20vh;
       img {
         max-width: 100%;
-        height: auto;
-        transition: transform 0.3s ease;
         cursor: pointer;
 
         &:hover {
@@ -41,6 +40,7 @@
 
       .nav-logo {
         margin-bottom: 0; 
+        height: 23vh;
       }
 
       .nav-link {
