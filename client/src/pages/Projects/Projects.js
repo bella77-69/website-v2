@@ -21,12 +21,20 @@ const Projects = () => {
                       <div className="project-content" key={index}>
                         <div className="project-info">
                           <div className="project-name">{website.name}</div>
+
                           <a className="project-website" href={website.github}>
                             {" "}
                           </a>
                         </div>
                         <div className="project-desc">{website.desc}</div>
-
+                        <a
+                          className="project-link"
+                          href={website.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Visit Website
+                        </a>
                         <div className="project-option">WEBSITE PREVIEW</div>
 
                         <div className="project-demo">

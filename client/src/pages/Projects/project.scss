@@ -128,6 +128,7 @@
     font-size: .9375rem;
     margin-bottom: .937rem;
     color: $blackmat;
+   
 
         @include tablet {
         font-size: 1.5rem;
@@ -161,7 +162,29 @@
         padding-right: 0;
         }
     }
+    
+    &-link {
+    text-align: left;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: $blacker;
+    font-weight: 400;
 
+        @include tablet {
+        font-size: .937rem;
+        line-height: 1.125rem;
+        }
+
+        @include desktop {
+        font-size: 1.187rem;
+        line-height: 25px;
+        width: 100%;
+        }
+    }
+    &-link:hover {
+        text-decoration: none;
+        color: $background;
+    }
     &-option {    
     text-align: left;
     font-size: .875rem;

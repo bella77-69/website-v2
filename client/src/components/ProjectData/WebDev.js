@@ -13,7 +13,7 @@ export const PrjData = [
     id: 1,
     name: "Acknowledging Our Lands",
     github: "https://github.com/Bella77-69/land-acknowledgement",
-    website: "",
+    website: "https://land-acknowledgement.vercel.app/",
     desc: "Acknowledging Our Lands is a web application that helps users learn about and perform land acknowledgments. It provides a simple and educational platform for acknowledging the Indigenous territories and traditional lands on which we live and work.",
     desktopGif: home,
     mobileGif: home2,
