@@ -1,0 +1,63 @@
+.loading-container {
+    background-color: #64676c;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .bk {
+    fill: none;
+  }
+  
+  @keyframes ld-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    30% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .loading-message {
+    font-size: 25px;
+    font-weight: 600;
+    color: #e1e1df;
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade-in 2s ease-in-out infinite;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
