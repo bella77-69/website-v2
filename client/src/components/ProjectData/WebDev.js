@@ -1,5 +1,5 @@
-import home from '../../assets/projects/homePageDesktop.jpg';
-import home2 from '../../assets/projects/homePageMobile.jpg';
+import home from '../../assets/projects/homePage.png';
+import home2 from '../../assets/projects/homePageMobile.png';
 import lash from "../../assets/projects/lash.jpg";
 import lash2 from "../../assets/projects/lash1.jpg";
 import movie from "../../assets/projects/movie.jpg";
