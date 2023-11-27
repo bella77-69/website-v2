@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container} from "react-bootstrap";
 import "./Nav.scss";
-import logo from "../../assets/logo/logo.jpg";
+import logo from "../../assets/logo/logo-tablet.png";
 
 export default function Header() {
 

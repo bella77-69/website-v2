@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../../assets/images/me.jpg";
+import aboutImg from "../../assets/images/me2.png";
 import Title from "../../components/Title/Title";
 import "./about.scss";
 

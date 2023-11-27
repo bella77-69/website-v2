@@ -11,7 +11,7 @@
     justify-content: center;
 
     .nav-logo {
-      height: 20vh;
+      // height: 20vh;
       img {
         max-width: 100%;
         cursor: pointer;
@@ -36,11 +36,11 @@
   @media (min-width: 768px) { 
     .nav-container {
       align-items: center;
-      padding: 10px;
+      // padding: 10px;
 
       .nav-logo {
         margin-bottom: 0; 
-        height: 23vh;
+        // height: 23vh;
       }
 
       .nav-link {
@@ -50,7 +50,7 @@
       .navbar-nav {
         flex-direction: row;
         align-items: center;
-        padding: 1rem 0;
+        // padding: 1rem 0;
       }
       .navbar-toggler {
         align-items: center;
