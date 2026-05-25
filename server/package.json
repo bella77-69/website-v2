@@ -10,10 +10,10 @@
   "author": "bella77-69",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.4",
+    "body-parser": "^1.20.5",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.9.8"
   },
